@@ -13,12 +13,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val name: SlambookEntry = SlambookEntry("Full Name", "Nickname"
     , "Age", "Birthday", "Phone", "Email", "Course", "Dream"
-    , "Crush", "Message")
+    , "Crush", "Message")                       //changing texts for corresponding tags
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
 
         binding.slambookData= name
         binding.sendButton.setOnClickListener{
@@ -27,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun sendData(view: View){
-        binding.apply{
+        binding.apply{                      //place values for the edits from the SlambookEntry kt with their corresponding values from the user
             slambookData?.name_edit= nameEdit.text.toString()
             slambookData?.nickname_edit= nicknameEdit.text.toString()
             slambookData?.age_edit= ageEdit.text.toString()
@@ -40,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             slambookData?.message_edit= messageEdit.text.toString()
 
             invalidateAll()
-            sendButton.visibility= View.GONE
+            sendButton.visibility= View.GONE            //hides unnecessary fields and shows the result of each fields
             messageEdit.visibility= View.GONE
             messageText.visibility= View.GONE
             crushEdit.visibility= View.GONE

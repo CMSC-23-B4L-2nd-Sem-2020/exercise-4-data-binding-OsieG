@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+<!--declare a reference variable from the SlambookEntry kt-->
         <variable
             name="slambookData"
             type="com.example.slambook.SlambookEntry" />
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
+<!--take the values of each corresponding variable holders from their SlambookEntry counterpart-->
             <TextView
                 android:id="@+id/hello_text"
                 android:layout_width="match_parent"

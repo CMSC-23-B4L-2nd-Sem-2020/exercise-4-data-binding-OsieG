@@ -8,3 +8,5 @@ data class SlambookEntry( var name_text: String= "", var nickname: String= "", v
                           , var birthday_edit: String= "", var phone_edit: String= "", var email_edit: String= ""
                           , var course_edit: String= "", var dream_edit: String= "", var crush_edit: String= ""
                           , var message_edit: String= "")
+
+//data class which holds various variables and called separately in the other kt file
