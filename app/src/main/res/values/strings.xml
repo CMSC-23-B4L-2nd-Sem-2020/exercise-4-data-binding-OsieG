@@ -21,4 +21,5 @@
     <string name="email_edit">Enter Email Address</string>
     <string name="done_button">Done</string>
     <string name="hello_const">HELLO!!!</string>
+    <string name="thankyou_text">Thank you for answering!</string>
 </resources>
